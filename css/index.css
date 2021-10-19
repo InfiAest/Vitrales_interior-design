@@ -1,0 +1,230 @@
+/*jumbotron styling ----*/
+.jumbotron {
+  background-image: url(../images/spacejoy-ffFnddUEaL4-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.jumbotron__text {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 300px;
+  color: white;
+}
+.fa-caret-up {
+  color: #c19e88;
+  margin-bottom: -10px;
+  vertical-align: bottom;
+}
+
+/*room and inspo styling ----*/
+.room-inspo-section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.room-section {
+  width: 100%;
+}
+
+.circle-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+.circle-button {
+  margin: 0 auto;
+}
+.circle-button a {
+  text-decoration: none;
+}
+.circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.2s;
+}
+.circle:hover {
+  transform: scale(1.2);
+}
+.circle-label {
+  text-align: center;
+}
+.dining-room {
+  background-image: url(../images/spacejoy-3cZkQcoOIbU-unsplash.jpg);
+}
+.office {
+  background-image: url(../images/office.jpg);
+}
+.living-room {
+  background-image: url(../images/living-room.jpg);
+}
+.kitchen {
+  background-image: url(../images/kitchen.jpg);
+}
+.bedroom {
+  background-image: url(../images/bedroom.jpg);
+}
+.bathroom {
+  background-image: url(../images/bathroom.jpg);
+}
+
+.inspo-section {
+  position: relative;
+  background-image: url(../images/inspo.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 790px;
+}
+.inspo-banner {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../images/green-tiles.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 120px;
+}
+.inspo-heading {
+  text-align: right;
+  width: 300px;
+  padding: 0 20px;
+}
+.inspo-button {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+/*top picks styling ----*/
+.top-picks-section {
+  background-image: url(../images/green-tiles.png);
+  background-repeat: repeat;
+  width: 100%;
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.top-picks-heading {
+  color: white;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+.product-img {
+  width: 100%;
+  height: 320px;
+  background-position: center;
+  background-size: cover;
+}
+.product a {
+  text-decoration: none;
+}
+.product p {
+  color: white;
+}
+.lamp {
+  background-image: url(../images/lamp.jpg);
+}
+.table {
+  background-image: url(../images/table.jpg);
+  background-position: left;
+}
+.pillow {
+  background-image: url(../images/pillow.jpg);
+}
+.chair {
+  background-image: url(../images/chair.jpg);
+}
+.product-button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/*large image styling ----*/
+.large-img {
+  background-image: url(../images/bedroom-2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 50px 0;
+}
+
+/*subscribe section styling ----*/
+.subscribe-section {
+  background-color: #465b75;
+  padding: 50px 0;
+}
+.subscribe-section h3,
+.subscribe-section p {
+  color: white;
+  text-align: center;
+}
+.subscribe-form {
+  max-width: 350px;
+  margin: 0 auto;
+}
+#email {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  font-size: 1.4rem;
+}
+::placeholder {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #c19e88;
+}
+#subscribe {
+  width: 100px;
+  padding: 10px;
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  background-color: #c19e88;
+  border: none;
+  font-size: 1.4rem;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media (min-width: 641px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*  Desktop screen sizes-------------*/
+@media (min-width: 801px) {
+  .room-inspo-section {
+    flex-direction: row;
+  }
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 0;
+  }
+}
+/* Extra Large Screens-------------*/
+/* @media only screen and (min-width: 1281px) {
+
+  } */
+/*
+    -------------*/
+/*
+    -------------*/
