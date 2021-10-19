@@ -1,6 +1,6 @@
 /*jumbotron styling ----*/
 .jumbotron {
-  background-image: url(../images/spacejoy-ffFnddUEaL4-unsplash.jpg);
+  background-image: url(../images/header.jpg);
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -58,7 +58,7 @@
   text-align: center;
 }
 .dining-room {
-  background-image: url(../images/spacejoy-3cZkQcoOIbU-unsplash.jpg);
+  background-image: url(../images/diningroom.jpg);
 }
 .office {
   background-image: url(../images/office.jpg);
@@ -120,7 +120,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  margin-top: 50px;
+  margin: 50px 20px;
   padding: 0 20px;
 }
 .product-img {
