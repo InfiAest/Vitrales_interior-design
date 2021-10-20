@@ -122,6 +122,7 @@ nav a:hover,
   font-size: 1.2rem;
   padding: 10px;
   text-align: center;
+  text-decoration: none;
 }
 .cta-button:hover {
   background-color: #eecc89;

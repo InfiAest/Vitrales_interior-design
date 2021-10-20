@@ -46,8 +46,8 @@
 }
 .circle {
   border-radius: 50%;
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   background-position: center;
   background-size: cover;
   transition: transform 0.2s;
@@ -232,6 +232,10 @@
 @media (min-width: 641px) {
   .product-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .circle {
+    width: 175px;
+    height: 175px;
   }
 }
 /*  Desktop screen sizes-------------*/
