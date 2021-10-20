@@ -1,3 +1,5 @@
+@import "./variables/colours.css";
+
 /*jumbotron styling ----*/
 .jumbotron {
   background-image: url(../images/header.jpg);
@@ -13,11 +15,11 @@
   top: 200px;
   left: 20px;
   width: 300px;
-  color: white;
-  text-shadow: #000000 1px 0px 8px;
+  color: var(--white);
+  text-shadow: var(--black) 1px 0px 8px;
 }
 .fa-caret-up {
-  color: #c19e88;
+  color: var(--sand);
   margin-bottom: -10px;
   vertical-align: bottom;
 }
@@ -97,7 +99,7 @@
   height: 120px;
 }
 .inspo-heading {
-  color: white;
+  color: var(--white);
   text-align: right;
   width: 320px;
   padding-right: 20px;
@@ -117,7 +119,7 @@
 }
 .top-picks-heading {
   font-size: 2.2rem;
-  color: white;
+  color: var(--white);
 }
 .product-grid {
   display: grid;
@@ -143,7 +145,7 @@
   text-decoration: none;
 }
 .product p {
-  color: white;
+  color: var(--white);
 }
 .lamp {
   background-image: url(../images/lamp.jpg);
@@ -175,12 +177,12 @@
 
 /*subscribe section styling ----*/
 .subscribe-section {
-  background-color: #465b75;
+  background-color: var(--blue);
   padding: 50px 0;
 }
 .subscribe-section h3,
 .subscribe-section p {
-  color: white;
+  color: var(--white);
   text-align: center;
 }
 .subscribe-form {
@@ -200,13 +202,13 @@
   font-size: 1rem;
 }
 #email:focus-visible {
-  outline-color: #c19e88;
+  outline-color: var(--sand);
 }
 ::placeholder {
   font-family: mr-eaves-modern, sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #c19e88;
+  color: var(--sand);
   font-size: 1.4rem;
 }
 #subscribe {
@@ -217,13 +219,13 @@
   font-weight: 300;
   font-style: normal;
   text-transform: uppercase;
-  color: black;
-  background-color: #c19e88;
-  border: 2px solid #c19e88;
+  color: var(--black);
+  background-color: var(--sand);
+  border: 2px solid var(--sand);
   font-size: 1.2rem;
 }
 #subscribe:hover {
-  background-color: white;
+  background-color: var(--white);
 }
 
 /* Media Queries
