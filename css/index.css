@@ -36,7 +36,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .circle-button {
   margin: 0 auto;
@@ -46,8 +46,8 @@
 }
 .circle {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   background-position: center;
   background-size: cover;
   transition: transform 0.2s;
@@ -99,8 +99,8 @@
 .inspo-heading {
   color: white;
   text-align: right;
-  width: 300px;
-  padding: 0 20px;
+  width: 320px;
+  padding-right: 20px;
 }
 .inspo-button {
   position: absolute;
@@ -116,6 +116,7 @@
   margin: 50px 0;
 }
 .top-picks-heading {
+  font-size: 2.2rem;
   color: white;
 }
 .product-grid {
@@ -243,11 +244,25 @@
     grid-gap: 2rem;
     padding: 0;
   }
+  .room-section h2 {
+    margin-top: 0;
+  }
+  .circle-button-container {
+    margin-bottom: 0px;
+    margin-top: 25px;
+  }
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
 }
 /* Extra Large Screens-------------*/
-/* @media only screen and (min-width: 1281px) {
-
-  } */
+@media only screen and (min-width: 1281px) {
+  .circle {
+    width: 175px;
+    height: 175px;
+  }
+}
 /*
     -------------*/
 /*
