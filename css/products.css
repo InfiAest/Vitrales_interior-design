@@ -1,0 +1,170 @@
+/*jumbotron styling ----*/
+.jumbotron {
+  background-image: url(../images/header2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 50px;
+  filter: brightness(85%);
+}
+.jumbotron__text {
+  width: 295px;
+}
+/*filter styling ----*/
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 50px 20px;
+  border-bottom: 2px solid var(--sand);
+}
+.filter-section h3 {
+  color: var(--black);
+  font-size: 1rem;
+}
+.filter-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  margin-top: 1rem;
+}
+.filter-button {
+  display: inline-block;
+  width: 110px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+.filter-button:hover {
+  transform: scale(1.2);
+}
+
+.icon-img {
+  display: block;
+  width: 40px;
+  height: auto;
+  margin: 0 auto;
+}
+.bedroom-icon {
+  width: 30px;
+  height: auto;
+}
+.logo-icon {
+  width: 20px;
+  height: auto;
+}
+/*product styling ----*/
+
+.product h3 {
+  color: var(--black);
+}
+.product p {
+  color: var(--black);
+}
+.img-container {
+  overflow: hidden;
+}
+
+.product-1 {
+  background-image: url(../images/products/2pots-01.jpg);
+}
+.product-2 {
+  background-image: url(../images/products/bowl-02.jpg);
+}
+.product-3 {
+  background-image: url(../images/products/table-edit.jpg);
+}
+.product-4 {
+  background-image: url(../images/products/candle-01.jpg);
+}
+.product-5 {
+  background-image: url(../images/products/brownpot-01.jpg);
+}
+.product-6 {
+  background-image: url(../images/products/napkin-02.jpg);
+}
+.product-7 {
+  background-image: url(../images/products/lamp-edit.jpg);
+}
+.product-8 {
+  background-image: url(../images/products/minipot-01.jpg);
+}
+.product-9 {
+  background-image: url(../images/products/greenpot-01.jpg);
+}
+.product-10 {
+  background-image: url(../images/products/plantpot-02.jpg);
+}
+.product-11 {
+  background-image: url(../images/products/chair-edit.jpg);
+}
+.product-12 {
+  background-image: url(../images/products/triopots-01.jpg);
+}
+.product-13 {
+  background-image: url(../images/products/pillow-edit.jpg);
+}
+
+/*top picks styling ----*/
+.top-picks-section {
+  background-image: url(../images/green-tiles.png);
+  background-repeat: repeat;
+  width: 100%;
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.top-picks-heading {
+  font-size: 2.2rem;
+  color: var(--white);
+}
+.top-picks-section h2,
+.top-picks-section h3,
+.top-picks-section p {
+  color: var(--white);
+}
+
+.lamp {
+  background-image: url(../images/products/lamp-edit.jpg);
+}
+.table {
+  background-image: url(../images/products/table-edit.jpg);
+}
+.pillow {
+  background-image: url(../images/products/pillow-edit.jpg);
+}
+.chair {
+  background-image: url(../images/products/chair-edit.jpg);
+  background-position: bottom;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media (min-width: 641px) {
+  .jumbotron {
+    background-position: left;
+  }
+  .filter-section h3 {
+    font-size: 1.2rem;
+  }
+  .filter-section {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .filter-button-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+  .icon-img {
+    width: 50px;
+  }
+  .bedroom-icon {
+    width: 35px;
+  }
+  .logo-icon {
+    width: 25px;
+  }
+}

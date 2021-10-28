@@ -9,19 +9,8 @@
   width: 100%;
   margin-bottom: 50px;
 }
-
 .jumbotron__text {
-  position: absolute;
-  top: 200px;
-  left: 20px;
-  width: 300px;
-  color: var(--white);
-  text-shadow: var(--black) 1px 0px 8px;
-}
-.fa-caret-up {
-  color: var(--sand);
-  margin-bottom: -10px;
-  vertical-align: bottom;
+  width: 285px;
 }
 
 /*room and inspo styling ----*/
@@ -121,48 +110,19 @@
   font-size: 2.2rem;
   color: var(--white);
 }
-.product-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  margin: 50px 20px;
-  padding: 0 20px;
-}
-.img-container {
-  overflow: hidden;
-}
-.product-img {
-  width: 100%;
-  height: 320px;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.2s;
-}
-.product-img:hover {
-  transform: scale(1.2);
-}
-.product a {
-  text-decoration: none;
-}
-.product p {
-  color: var(--white);
-}
+
 .lamp {
-  background-image: url(../images/lamp.jpg);
+  background-image: url(../images/products/lamp-original.jpg);
 }
 .table {
-  background-image: url(../images/table.jpg);
+  background-image: url(../images/products/table-original.jpg);
 }
 .pillow {
-  background-image: url(../images/pillow.jpg);
+  background-image: url(../images/products/pillow-original.jpg);
 }
 .chair {
-  background-image: url(../images/chair.jpg);
+  background-image: url(../images/products/chair-original.jpg);
   background-position: bottom;
-}
-.product-button {
-  margin-bottom: 20px;
-  width: 100%;
 }
 
 /*large image styling ----*/
@@ -175,66 +135,10 @@
   margin: 50px 0;
 }
 
-/*subscribe section styling ----*/
-.subscribe-section {
-  background-color: var(--blue);
-  padding: 50px 0;
-}
-.subscribe-section h3,
-.subscribe-section p {
-  color: var(--white);
-  text-align: center;
-}
-.subscribe-form {
-  max-width: 350px;
-  margin: 0 auto;
-}
-.form-inline {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-#email {
-  width: 220px;
-  height: 50px;
-  padding: 0 10px;
-  border: none;
-  font-size: 1rem;
-}
-#email:focus-visible {
-  outline-color: var(--sand);
-}
-::placeholder {
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: var(--sand);
-  font-size: 1.4rem;
-}
-#subscribe {
-  width: 110px;
-  height: 50px;
-  padding: 10px;
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  text-transform: uppercase;
-  color: var(--black);
-  background-color: var(--sand);
-  border: 2px solid var(--sand);
-  font-size: 1.2rem;
-}
-#subscribe:hover {
-  background-color: var(--white);
-}
-
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
-  .product-grid {
-    grid-template-columns: 1fr 1fr;
-  }
   .circle {
     width: 175px;
     height: 175px;
@@ -244,14 +148,6 @@
 @media (min-width: 801px) {
   .room-inspo-section {
     flex-direction: row;
-  }
-  .product-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
-    padding: 0;
-  }
-  .room-section h2 {
-    margin-top: 0;
   }
   .circle-button-container {
     margin-bottom: 0px;
