@@ -1,3 +1,5 @@
+@import "./variables/colours.css";
+
 /*jumbotron styling ----*/
 .jumbotron {
   background-image: url(../images/header2.jpg);
@@ -9,13 +11,14 @@
   filter: brightness(85%);
 }
 .jumbotron__text {
-  width: 295px;
+  width: 336px;
 }
 /*filter styling ----*/
 .filter-section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
   margin: 50px 20px;
   border-bottom: 2px solid var(--sand);
@@ -23,6 +26,7 @@
 .filter-section h3 {
   color: var(--black);
   font-size: 1rem;
+  flex-grow: 2;
 }
 .filter-button-container {
   display: grid;
@@ -32,7 +36,7 @@
 }
 .filter-button {
   display: inline-block;
-  width: 110px;
+  width: 130px;
   height: 100px;
   transition: transform 0.2s;
 }
@@ -144,6 +148,9 @@
 @media (min-width: 641px) {
   .jumbotron {
     background-position: left;
+  }
+  .jumbotron__text {
+    width: 346px;
   }
   .filter-section h3 {
     font-size: 1.2rem;

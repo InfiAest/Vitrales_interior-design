@@ -1,4 +1,5 @@
 @import "./variables/colours.css";
+@import "./variables/fonts.css";
 
 /*general styles ----*/
 body {
@@ -7,44 +8,43 @@ body {
 }
 h1 {
   position: relative;
+  font-family: var(--headings);
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: montserrat, sans-serif;
-  font-weight: 100;
-  font-size: 2.5rem;
 }
-h2 {
+h2,
+h3 {
   position: relative;
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-family: var(--headings);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--black);
-  font-size: 1.8rem;
-  text-align: center;
 }
 h3 {
-  text-transform: uppercase;
-  font-family: montserrat, sans-serif;
-  font-weight: 100;
   color: var(--white);
   font-size: 1.4rem;
 }
 h4 {
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 1.5rem;
+  font-family: var(--headings);
+  font-weight: 400;
+  font-size: 1.2rem;
   color: var(--black);
   margin: 0.5rem 0;
   text-align: center;
 }
 p {
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-family: var(--body);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: none;
   color: var(--black);
-  font-size: 1.4rem;
 }
+
 .container,
 .footer-container {
   position: relative;
@@ -99,9 +99,10 @@ nav li {
 nav a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: montserrat, sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
+  font-family: var(--headings);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
   color: var(--black);
   display: block;
 }
@@ -139,14 +140,15 @@ nav a:hover,
   display: flex;
   position: absolute;
   top: 200px;
-  left: 20px;
+  left: 0px;
+  padding: 0 20px;
   color: var(--white);
-  text-shadow: var(--black) 1px 0px 8px;
+  background-color: var(--green);
 }
 .jumbotron-icon {
   width: 25px;
   height: 30px;
-  padding-top: 200px;
+  padding-top: 190px;
 }
 
 /*cta-button styling ----*/
@@ -156,15 +158,13 @@ nav a:hover,
   justify-content: flex-end;
 }
 .cta-button {
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 400;
+  font-family: var(--body);
   font-style: normal;
-  text-transform: uppercase;
   color: var(--black);
   background-color: var(--yellow);
   border: none;
   text-shadow: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -240,8 +240,7 @@ nav a:hover,
   outline-color: var(--sand);
 }
 ::placeholder {
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
+  font-family: var(--body);
   font-style: normal;
   color: var(--sand);
   font-size: 1.4rem;
@@ -250,14 +249,12 @@ nav a:hover,
   width: 110px;
   height: 50px;
   padding: 10px;
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
+  font-family: var(--body);
   font-style: normal;
-  text-transform: uppercase;
   color: var(--black);
   background-color: var(--sand);
   border: 2px solid var(--sand);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 #subscribe:hover {
   background-color: var(--white);
@@ -304,8 +301,8 @@ footer h3 {
   display: block;
   text-decoration: none;
   color: var(--sand);
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
+  font-family: var(--body);
+  line-height: 28px;
   font-style: normal;
   font-size: 1.4rem;
 }
@@ -326,12 +323,18 @@ footer h3 {
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
+  h1 {
+    letter-spacing: 6px;
+  }
   .product-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .jumbotron__text {
+    left: 20px;
+  }
 }
 /*  Desktop screen sizes-------------*/
-@media (min-width: 801px) {
+@media (min-width: 861px) {
   header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -359,7 +362,8 @@ footer h3 {
     padding: 0 10px;
   }
   nav a {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0px;
   }
   .footer-container {
     flex-direction: row;
